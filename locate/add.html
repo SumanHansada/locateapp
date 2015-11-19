@@ -1,0 +1,131 @@
+<div ng-controller="LocateCtrl">
+<h3 class="page-heading">Add Listing</h3>
+<div class="details">
+	<a href="/app/#locate" class="button tiny back">Back To Listings</a>
+	<div data-alert class="alert-box success" ng-show="msg">{{msg}}</div>
+	<div class="row">
+	  	<div class="small-12 columns">
+	  		<form ng-submit='addApartments()'>
+			  <div class="row">
+			    <div class="large-12 columns">
+			      <label>Title
+			        <input type="text" name="title" ng-model="title" placeholder="Add a listing title" required />
+			      </label>
+			    </div>
+			  </div>
+			   <div class="row">
+			    <div class="large-4 columns">
+			      <label>Contact Phone
+			        <input type="text" name="phone" ng-model="phone" placeholder="Add contact phone number" />
+			      </label>
+			    </div>
+			 </div>
+			  <div class="row">
+			    <div class="large-4 columns">
+			      <label>Contact Email
+			        <input type="text" name="email" ng-model="email" placeholder="Add contact email" required />
+			      </label>
+			    </div>
+			 </div>
+			  <div class="row">
+			    <div class="large-4 columns">
+			      <label>Street Address
+			        <input type="text" name="street_address" ng-model="street_address" placeholder="Add street address" />
+			      </label>
+			    </div>
+			 </div>
+			  <div class="row">
+			    <div class="large-4 columns">
+			      <label>City
+			        <input type="text" name="city" ng-model="city" placeholder="Add city" required />
+			      </label>
+			    </div>
+			 </div>
+			 <div class="row">
+			    <div class="large-4 columns">
+			      <label>State
+			        <select name="state" ng-model="state">
+						<option value="AP">Andhra Pradesh</option>
+						<option value="AR">Arunachal Pradesh</option>
+						<option value="AS">Assam</option>
+						<option value="BI">Bihar</option>
+						<option value="CH">Chattisgarh</option>
+						<option value="GO">Goa</option>
+						<option value="GJ">Gujrat</option>
+						<option value="HR">Haryana</option>
+						<option value="HP">Himachal Pradesh</option>
+						<option value="JK">Jammu and Kashmir</option>
+						<option value="JH">Jharkhand</option>
+						<option value="KR">Karnataka</option>
+						<option value="KE">Kerela</option>
+						<option value="MP">Madhya Pradesh</option>
+						<option value="MH">Maharashtra</option>
+						<option value="MA">Manipur</option>
+						<option value="ME">Meghalaya</option>
+						<option value="MI">Mizoram</option>
+						<option value="NG">Nagaland</option>
+						<option value="OR">Odisha</option>
+						<option value="PJ">Punjab</option>
+						<option value="RJ">Rajasthan</option>
+						<option value="SI">Sikkim</option>
+						<option value="TN">Tamil Nadu</option>
+						<option value="TR">Tripura</option>
+						<option value="UP">Uttar Pradesh</option>
+						<option value="UT">Uttrakhand</option>
+						<option value="WB">West Bengal</option>
+						</select>
+			      </label>
+			    </div>
+			</div>
+			<div class="row">
+			    <div class="large-4 columns">
+			      <label>Pincode
+			        <input type="text" name="pincode" ng-model="pincode" placeholder="Add pincode" />
+			      </label>
+			    </div>
+			 </div>
+			  <div class="row">
+			    <div class="large-4 columns">
+			      <label>Price
+			        <input type="text" name="price" ng-model="price" placeholder="Add monthly price" />
+			      </label>
+			    </div>
+			 </div>
+			  <div class="row">
+			    <div class="large-12 columns">
+			      <label>Bedrooms
+			        <select name="bedrooms" ng-model="bedrooms">
+			          <option value="1">1</option>
+			          <option value="2">2</option>
+			          <option value="3">3</option>
+			          <option value="4">4</option>
+			          <option value="5">5</option>
+			          <option value="6">6</option>
+			        </select>
+			      </label>
+			    </div>
+			  </div>
+			  <div class="row">
+			    <div class="large-12 columns">
+			      <label>Description
+			        <textarea name="description" ng-model="description" placeholder="Add a description"></textarea>
+			      </label>
+			    </div>
+			  </div>
+			  <div class="row">
+			    <div class="large-4 columns">
+			      <label>Image Url
+			        <input type="text" name="image_url" ng-model="image_url" placeholder="Add Image URL" />
+			      </label>
+			    </div>
+			 </div>
+			  <div class="row">
+			    <div class="large-12 columns">
+			       <input type="submit" class="button" value="Add Listing">
+			    </div>
+			  </div>
+			</form>
+	  	</div>
+	</div>
+</div>
+</div>
