@@ -41,6 +41,10 @@ header h1{
   padding-bottom: 0;
 }
 
+footer{
+  text-align: center;
+}
+
 .rental{
   line-height:2em;
   border-bottom: 1px #ccc solid;
